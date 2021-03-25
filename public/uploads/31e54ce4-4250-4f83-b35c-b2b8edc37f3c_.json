@@ -1,0 +1,304 @@
+{
+    "basics": {
+      "name": "Adrián Deccico",
+      "label": "DevOps Consultant",
+      "picture": "https://raw.githubusercontent.com/ganeshrockybhai/daru-resume/main/jsonresume-theme-daru/src/darumatic_logo_transparent.png",
+      "email": "hello@darumatic.com",
+      "phone": "P: 02-82 948 067",
+      "company": "Darumatic Pty Ltd DevOps Consulting"
+    },
+    "intro":{
+      "label":"Introduction",
+      "content":["Adrián is a DevOps Engineer and Technical Leader with over 16 years of experience in the IT Industry. Adriánis able to deliver effectively in leading edge software environments utilising appropriate methodologies,tools and languages."
+        ,"A background in finance, engineering, telecommunications and business software development issupplemented by a personal desire to improve the way IT is used. This combination has led to significantimprovements in the way software has been developed and deployed for multiple clients."
+        ,"Adrián is multi-lingual (Spanish, English and Italian) and an excellent communicator. He has significant international project experience and has consistently been recognised by management for his contributionsin both leading high performing teams and delivering successful outcomes. Adrián achieves results througha combination of both technical ability and management capability. He particularly enjoys mentoring and teammotivation responsibilities."]
+    },
+    "skill":{
+      "label":"Technical Skills",
+      "content": [
+        {
+          "name": "Programming languages",
+          "keywords": ["Python","Java","C++","Bash","JavaScript","PHP","Groovy"]
+        },
+        {
+          "name": "CI Servers",
+          "keywords": ["Jenkins (+ plugins dev)","Bamboo (+ plugins dev)"]
+        },
+        {
+          "name": "Web technologies",
+          "keywords": ["Html / CSS ","Django","Sinatra","Tomcat","Nginx","Apache (httpd)" ,"WebServices","Rest","Corba"]
+        },
+        {
+          "name": "Containers technology",
+          "keywords": ["Kubernetes","Docker","Openshift"]
+        },
+        {
+          "name": "Orchestration",
+          "keywords": ["Ansible", "Puppet", "Chef"]
+        },
+        {
+          "name": "OS",
+          "keywords": ["Redhat / CentOS","Ubuntu","Windows"]
+        },
+        {
+          "name": "IaaS, Virtualization",
+          "keywords": ["AWS: Systems Operations on AWS.",["Terraform","Boto"],"Azure","VMWare"," OpenVZ / KVM"]
+        },
+        {
+          "name": "Tools",
+          "keywords": ["MAven", "Ant", "Subversion","Git"]
+        },
+        {
+          "name": "Databases",
+          "keywords": ["PostgreSQL", "Mysql / MariaDB", "Oracle"]
+        },
+        {
+          "name": "Methodologies",
+          "keywords": ["Scrum", "Kanban"]
+        }
+      ]
+    },
+    "works": {
+      "label":"Professional Experience",
+      "content":[
+        {
+          "location": "Sydney",
+          "description": ["Responsible for designing and implementing the migration strategy to AWS.","Reviewed an initial design of network infrastructure and CI/CD architecture."],
+          "position": "DevOps Consultant",
+          "company":"Protecht Group Pty Ltd",
+          "startDate": "December 2017",
+          "endDate": "current",
+          "technologies": [
+            "AWS, EC2, VPC, Jenkins, Bitbucket"
+          ],
+          "achievements":[
+            {
+            "types":0,
+            "desc":"Review of CI/CD pipeline and AWS infrastructure"
+            }
+          ]
+        },
+        {
+          "location": "Sydney",
+          "description": ["Responsible for provisioning Kubernetes to host the containerised applications of the Data Ecosystem Platform (DECO) for the NSW Government.",
+          "The work included designing the CI/CD pipeline with the development team as well as educating and training developers / testers and support staff on Kubernetes and container technologies.",
+          "Provisioned all CI/CD related technologies: Jenkins, Gitlab, Nexus.",
+          "Provided self service interface for developers and testers via Jenkins.",
+          "Implemented custom monitoring using python scripts of deployed micro-services."],
+          "position": "DevOps Consultant",
+          "company":"OneGov, NSW Government",
+          "startDate": "September 2017",
+          "endDate": "current",
+          "technologies": [
+            "Docker, CentOS, Kubernetes (1.7), Jenkins, Gitlab, .NET Core"
+          ],
+          "achievements":[
+            {
+            "types":0,
+            "desc":"Designed and implemented CI/CD pipeline"
+            }
+          ]
+        },
+        {
+          "location": "Sydney",
+          "description": ["Consultant and co-founder of Darumatic. Bootstrapped a consulting agency.","Obtained OpenShift delivery engineering and sales accreditations. Work with clients to discuss cloud roadmaps. Build PoC: Kubernetes on OpenStack."],
+          "position": "DevOps Consultant",
+          "company":"Darumatic Pty Ltd",
+          "startDate": "April 2017",
+          "endDate": "August 2017",
+          "technologies": [
+            "Docker, OpenShift, Kubernetes, OpenStack"
+          ],
+          "achievements":[
+            {
+            "types":0,
+            "desc":"Obtained delivery engineering and sales accreditations for OpenShift."
+            }
+          ]
+        },
+        {
+          "location": "Sydney",
+          "description": ["Hired as a senior consultant to work in both internal and external projects."],
+          "position": "Senior Consultant",
+          "company":"Offis",
+          "startDate": "September 2016",
+          "endDate": "February 2017",
+          "technologies": [
+            "Kubernetes, Docker, GlusterFS, Kops, Rightscale, Terraform, AWS, Azure, Ruby, Bash, Git, Jenkins."
+          ],
+          "achievements":[
+            {
+            "types":0,
+            "desc":"Designed and implemented a multi-cloud online PostgreSQL database with features including a high resiliency, even in the event of multiple machines crashing and a multi AWS-zone tolerance."
+            },
+            {
+              "types":0,
+              "desc":"Automated Jenkins orchestration using Rightscale and AWS. This solution optimised traditional Rightscale multi-cloud orchestration with near instant recovery from snapshots."
+            }
+          ]
+        },
+        {
+          "location": "Sydney",
+          "description": ["Optiver is a multinational trading company with a large trader’s teams and an expanding IT department. Contributed as a senior engineer in several projects to improve and enhance the development team efficiency."],
+          "position": "Senior DevOps Engineer",
+          "company":"Optiver",
+          "startDate": "July 2012",
+          "endDate": "August 2016",
+          "technologies": [
+            "Python, Bash, Java, Atlassian stack, Artifactory, Puppet, Ansible, Git, Subgit, Subversion, PostgreSQL, Redhat 5 / CentOS 7."
+          ],
+          "achievements":[
+            {
+            "types":1,
+            "desc":"Artifacts Management Solution"
+            },
+            {
+              "types":1,
+              "desc":"Designed and implemented a high availability Artifactory service. This new service enabled a new deployment with the current data to be obtained in less than five minutes consistently in comparison to the previously existing manual process."
+            },
+            {
+              "types":1,
+              "desc":"Subversion to Git migration"
+            },
+            {
+              "types":1,
+              "desc":"Migrated Subversion to Git for more than a hundred projects across the company. Approach taken was in alignment to the company’s needs, which was to perform a full duplex gradual synchronization between both source control systems. The migration also included the development of a dependency management tool in Python."
+            },
+            {
+              "types":2,
+              "desc":""
+            },
+            {
+              "types":1,
+              "desc":"Monitoring Tools and Systems Automation"
+            },
+            {
+              "types":0,
+              "desc":"Red Alert, a visualisation tool to find software bugs hot spots crossing information from JIRA and Git. This tool was awarded the ‘Best innovation’ prize in the Optiver 2015 Innovation days."
+            },
+            {
+              "types":0,
+              "desc":"Jenkins Build doctor. This was a plugin to trigger self-healing scripts against common issues. It was merged in the main Jenkins project: pull request"
+            },
+            {
+              "types":0,
+              "desc":"Subversion automated permissions tool based on LDAP information."
+            },
+            {
+              "types":0,
+              "desc":"Dashboard for systems health, alerts and performance."
+            }
+          ]
+        },
+        {
+          "location": "Sydney",
+          "description": ["This role focused on improving and speeding up the complex release process in Atlassian and to support the development workflow."],
+          "position": "Build and Release Engineer",
+          "company":"Atlassian",
+          "startDate": "Nov 2010",
+          "endDate": "July 2012",
+          "technologies": [
+            "Java, Python, Bash, Maven, Nexus, Puppet, AWS, Ubuntu / CentOS, PostgreSQL, Svn, Git, Mercurial. Bamboo and Confluence API."
+          ],
+          "achievements":[
+            {
+            "types":1,
+            "desc":"Designed and developed several tools and plugins to automate repetitive tasks, managed Atlassian build grid (around 500K builds per year) and improved their infrastructure reliability. Two of these tools have been featured in the following:"
+            },
+            {
+              "types":3,
+              "desc":"http://blogs.atlassian.com/2012/03/hung-build-killer-plugin-bambo/"
+            },
+            {
+              "types":3,
+              "desc":"https://blogs.atlassian.com/2012/04/automate-ec2-image-bamboo-puppet/"
+            },
+            {
+              "types":1,
+              "desc":"Other tasks performed in Atlassian included:"
+            },
+            {
+              "types":0,
+              "desc":"Administered more than 400 virtual machines in KVM and EC2 instances."
+            },
+            {
+              "types":0,
+              "desc":"Migrated the test platform matrix (Windows server, Oracle, DB2, PostgreSQL, MySQL, SqlServer, Tomcat, etc) from Labmanager to AWS in Bamboo dramatically improving the system reliability and speed."
+            }
+          ]
+        },
+        {
+          "location": "(Madrid) Spain",
+          "description": ["The localisation centre in Madrid focused in re-releasing games for different, non- English speaking markets."],
+          "position": "Lead Engineer",
+          "company":"Electronic Arts",
+          "startDate": "July 2009",
+          "endDate": "Oct 2010",
+          "technologies": [
+            "Action Script, C++, Python, C#, Unreal Engine, Nant, Jenkins."
+          ],
+          "achievements":[
+            {
+            "types":0,
+            "desc":"Lead a team devoted to localising games to Asian and European languages. This included several AAA titles such as Fifa 2010 PSP, NBA 2010 PSP, Army of Two 40th day, NHL 11, MMA and NBA Elite 11. The tasks involved fixing issues within the games and softening some aspects of them (nudity, gore) to accommodate different country’s regulations."
+            },
+            {
+              "types":0,
+              "desc":"Introduced a Continuous Integration solution to dramatically decrease their time to deliver and to improve the overall quality of their build generation and localisation pipelines for what used to be a manual process."
+            }
+          ]
+        },
+        {
+          "location": "(Buenos Aires) Argentina",
+          "description": ["Team lead and application development on multi-national projects across Argentina and US including key coordinator role between US team and IT managers."],
+          "position": "Technical Leader",
+          "company":"Verizon",
+          "startDate": "July 2006",
+          "endDate": "Oct 2008",
+          "technologies": [
+            "C++, Java, Bash, Weblogic, Jenkins, CVS, Subversion."
+          ],
+          "achievements":[
+            {
+              "types":0,
+              "desc":"Designed and implemented a Continuous Integration solution (Hudson / Jenkins) to aid early detection of software faults and to improve productivity."
+            },
+            {
+              "types":0,
+              "desc":"Delivered projects (Corba ORB migration, Web GOA, VRF Lite) from proof of concept through to development and testing to full implementation."
+            },
+            {
+              "types":0,
+              "desc":"Introduced Scrum Methodology to team and improved communication through a wiki for preserving and sharing knowledge."
+            }
+          ]
+        }
+      ]
+    },
+  
+    "qualifications": {
+      "label":"Qualification",
+      "content":[
+        {
+          "studytype": "Bachelor Degree, Systems Engineering, UAI",
+          "year": "2005",
+          "location":"Buenos Aires (Argentina)"
+        },
+        {
+          "studytype": "Master in Business Intelligence, Universitat Oberta de Catalunya",
+          "year": "2001",
+          "location":"Barcelona (Spain)"
+        },
+        {
+          "studytype": "Accreditation: Red Hat Delivery Specialist - Platform as a Service (Paas)",
+          "year": "2017"        },
+        {
+        "studytype": "Systems Operations on AWS (Amazon)",
+        "year": "2016"        },
+        {
+          "studytype": "Coursera courses: Machine Learning, Startup Engineering, Public Speaking",
+          "year": "2010-2017"
+        }
+      ]
+    }
+  }

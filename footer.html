@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+ 
+ 
+ body {
+   font-family: Arial,serif;
+   font-style: normal;
+   
+   font-size: 1em;
+   letter-spacing: .3px;
+   color: rgb(0,0,0);
+   text-decoration: none;
+   margin-left: 1.9cm;
+   margin-right: 1.9cm;
+   margin-bottom: 30px;
+ 
+ }
+ footer{
+   border-top: 1.5px solid #9d9d9d;
+
+   height: 5em;
+ }
+.footerextcontainer{
+    margin-top: 7px;
+    display: inline;
+}
+.footertext{
+    display: block;
+    text-align: center;
+}
+.textprofile{
+    text-align: center;
+   float: none;
+}
+.pagetext{
+   text-align: center;
+   float: right;
+}
+    </style>
+    <meta charset="utf-8">
+    <script>
+        function substitutePdfVariables1() {
+
+            function getParameterByName(name) {
+                var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+                return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+            }
+
+            function substitute(name) {
+                var value = getParameterByName(name);
+                var elements = document.getElementsByClassName(name);
+
+                for (var i = 0; elements && i < elements.length; i++) {
+                    elements[i].textContent = value;
+                }
+            }
+
+            ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection']
+                .forEach(function(param) {
+                    substitute(param);
+                });
+        }
+    </script>
+</head>
+<body onload="substitutePdfVariables1()">
+    <footer>
+        <div class="footerextcontainer">
+            <div class="footertext">
+                <span class="textprofile">
+                    Consultant Profile
+                </span>
+                <span class="pagetext">
+                    <span class="page"></span>/
+                    <span class="topage"></span>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
