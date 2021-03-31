@@ -49,7 +49,7 @@ fs.readdir(uploadsDir, function(err, files) {
         return console.error(err);
       }
       now = new Date().getTime();
-      endTime = new Date(stat.ctime).getTime() + ;
+      endTime = new Date(stat.ctime).getTime() + + 3600000;;
       if (now > endTime) {
         return rimraf(path.join(uploadsDir, file), function(err) {
           if (err) {

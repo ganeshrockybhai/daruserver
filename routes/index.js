@@ -59,16 +59,16 @@ router.post('/upload',upload, async (req, res) => {
         res.render('index', { msg: "Error : No File Selected" });
       }
       else {
-        var cmdGenerateResume = "hackmyresume build ./public/uploads/"+req.file.filename+" TO ./public/"+req.file.filename+"/out/resume.all -t node_modules/jsonresume-theme-daru"
+        var cmdGenerateResume = "hackmyresume build ./public/uploads/"+req.file.filename+" TO ./public/downloads/"+req.file.filename+"/out/resume.all -t node_modules/jsonresume-theme-daru"
         await execShellCommand(cmdGenerateResume) ;
-        var cmdGenerateResumePDF = "wkhtmltopdf --margin-left '0mm' --margin-right '0mm' --header-html ./header.html --footer-html ./footer.html ./public/"+req.file.filename+"/out/resume.pdf.html ./public/"+req.file.filename+"/resumefinal.pdf"
+        var cmdGenerateResumePDF = "wkhtmltopdf --margin-left '0mm' --margin-right '0mm' --header-html ./header.html --footer-html ./footer.html ./public/downloads/"+req.file.filename+"/out/resume.pdf.html ./public/downloads/"+req.file.filename+"/resumefinal.pdf"
         await execShellCommand(cmdGenerateResumePDF) ;
         res.render('index', { msg: "Resume created click download", file: `/download/${req.file.filename}` });
       }
 });
 
 router.get('/download/:id', (req, res) => {
-  req.params.id
-  res.download("./public/"+req.params.id+"/resumefinal.pdf");
+  console.log(req.params)
+  res.download("./public/downloads/"+req.params.id+"/resumefinal.pdf");
 });
 module.exports = router;

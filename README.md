@@ -7,7 +7,7 @@ A resume creator using hackresume and wkhtmltopdf
 1. Check linux system for latest packages
 ```
 sudo apt upgrade
- sudo apt update
+sudo apt update
 ```
 2. Install latest node js
 ```
@@ -34,7 +34,7 @@ sudo apt install nodejs
  ```
 git clone {{url}}
  ```
- 8. Start the code in PM@
+ 8. Start the code in PM2
  ```
  cd daru-resume
  pm2 start bin/www
