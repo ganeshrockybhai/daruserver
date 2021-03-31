@@ -19,7 +19,7 @@ const exec = require('child_process').exec;
 const storage = multer.diskStorage({
   destination: './public/uploads/',
   filename: function (req, file, cb) {
-    cb(null, uuid.v4().toString() + "_" + path.extname(file.originalname));
+    cb(null, uuid.v4().toString());
   }
 });
 
@@ -55,22 +55,20 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/upload',upload, async (req, res) => {
-
       if (req.file == undefined) {
         res.render('index', { msg: "Error : No File Selected" });
       }
       else {
-        var cmd = "hackmyresume build ./public/uploads/"+req.file.filename+" TO out/resume.all -t node_modules/jsonresume-theme-daru"
-        await execShellCommand(cmd) ;
-        var cmd1 = "wkhtmltopdf --margin-left '0mm' --margin-right '0mm' --header-html ./header.html --footer-html ./footer.html ./out/resume.pdf.html ./resumefinal.pdf"
-        await execShellCommand(cmd1) ;
-
-        res.render('index', { msg: `File Uploaded!${req.file.originalname}`, file: `/download/${req.file.filename}` });
+        var cmdGenerateResume = "hackmyresume build ./public/uploads/"+req.file.filename+" TO ./public/"+req.file.filename+"/out/resume.all -t node_modules/jsonresume-theme-daru"
+        await execShellCommand(cmdGenerateResume) ;
+        var cmdGenerateResumePDF = "wkhtmltopdf --margin-left '0mm' --margin-right '0mm' --header-html ./header.html --footer-html ./footer.html ./public/"+req.file.filename+"/out/resume.pdf.html ./public/"+req.file.filename+"/resumefinal.pdf"
+        await execShellCommand(cmdGenerateResumePDF) ;
+        res.render('index', { msg: "Resume created click download", file: `/download/${req.file.filename}` });
       }
 });
 
 router.get('/download/:id', (req, res) => {
-  
-  res.download("./resumefinal.pdf");
+  req.params.id
+  res.download("./public/"+req.params.id+"/resumefinal.pdf");
 });
 module.exports = router;

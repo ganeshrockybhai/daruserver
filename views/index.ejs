@@ -12,24 +12,23 @@
 <body>
   <div class="container">
     <h1>File upload</h1>
-    <%= typeof msg != 'undefined' ? msg : "" %>
+    <br>
+    <h6>File upload</h6>
       <form action="/upload" method="POST" enctype="multipart/form-data">
         <div class="file-field input-field">
           <div class="btn grey">
             <span>Choose Resume.json</span>
             <input name="myImage" type="file">
           </div>
-          <div class="file-path-wrapper">
+          <div class="file-path-wrapper" style="visibility: hidden;">
             <input class="file-path validate" type="text">
           </div>
         </div>
         <button type="submit" class="btn">Upload</button>
       </form>
       <br>
-
-      <hr>
-      <h1>File Download</h1><br>
-      
+      <h6>File Download</h6><br>
+          <span><%= typeof msg != 'undefined' ? msg : "" %></span><br>
       <a href="<%= typeof file != 'undefined' ? file : '' %>" class="btn grey">Download</a><br><br><br>
   </div>
 
